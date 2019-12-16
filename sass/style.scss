@@ -1,15 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
 
-
-body {
-    background-color: lightgrey;
-    //font-family: Arial;
+@font-face {
+  font-family: "Wisdom";
+  src: url("../fonts/Wisdom\ Script\ AJ.otf");
 }
 
-@font-face {
-    font-family: "Wisdom";
-    src: url("../fonts/Wisdom\ Script\ AJ.otf");
+// Global
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  //text-align: center;
+  .text {
+    width:100%;
+    text-align: center;
+    background-color: green;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
   }
+  .welcome {
+    top: 277px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #fff;
+    font-family: "Droid Serif";
+    font-weight: 400;
+    font-style: italic;
+  }
+  .meet {
+    top: 361px;
+    font-size: 75px;
+    letter-spacing: -3px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
   
   .wisdom {
     font-size: 26px;
