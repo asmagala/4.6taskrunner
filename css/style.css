@@ -23,7 +23,6 @@ body {
 .container .text {
   width: 100%;
   text-align: center;
-  background-color: green;
   display: inline;
   position: absolute;
   left: 50%;
@@ -52,46 +51,72 @@ body {
   text-transform: uppercase;
 }
 
-.wisdom {
+.container .btn {
+  display: block;
+  position: absolute;
+  top: 474px;
+  border-radius: 3px;
+  background-color: #fed136;
+  width: 240px;
+  height: 65px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  padding: 23px 0;
+  text-decoration: none;
+}
+
+.container .wisdom {
+  display: block;
+  position: absolute;
+  margin: 40px 40px 10px 100px;
+  left: 30px;
   font-size: 26px;
   letter-spacing: 1px;
   line-height: 41px;
   color: #fed136;
-  background-color: green;
   font-family: Wisdom;
+  border: 1px solid green;
 }
 
-.montserrat {
-  font-size: 14px;
-  line-height: 41px;
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-weight: 400;
-  text-align: left;
-  color: white;
-  background-color: green;
-}
+/*
 
-.droid-serif {
-  font-size: 14px;
-  color: #737373;
-  font-family: "Droid Serif";
-  font-weight: 400;
-  font-style: italic;
-  text-align: left;
-  background-color: green;
-  color: white;
-}
 
-.roboto-slab {
-  width: 280px;
-  height: 58px;
-  font-size: 14px;
-  letter-spacing: 0px;
-  color: white;
-  background-color: green;
-  font-family: "Roboto Slab";
-  font-weight: 400;
-  text-align: left;
-}
+
+  .montserrat {
+    font-size: 14px;
+    line-height: 41px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: left; //center;
+    color: white;
+    background-color: green;
+  }
+  
+  .droid-serif {
+    font-size: 14px;
+    color: #737373;
+    font-family: "Droid Serif";
+    font-weight: 400;
+    font-style: italic;
+    text-align: left; //center;
+    background-color: green;
+    color: white;
+  }
+
+  .roboto-slab {
+    width: 280px;
+    height: 58px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: white; // #777777;
+    background-color: green;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: left; //center;
+  }
+*/
 /*# sourceMappingURL=style.css.map */
