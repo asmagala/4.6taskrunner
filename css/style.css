@@ -4,6 +4,8 @@
   src: url("../fonts/Wisdom Script AJ.otf");
 }
 
+/*Variables*/
+/*Global*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,80 +13,118 @@
 body {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
+.header {
+  background-image: url("../images/Background_Image.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  padding-top: 40px;
+}
+
+nav .container h1 {
+  margin: 0;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 30px;
+  position: absolute;
+  transform: translate(0, -10px);
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fed136;
+  font-family: "Wisdom";
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-left: 36px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+/*
 .container {
   display: block;
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
+  .text {
+    width:100%;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+  }
+  .welcome {
+    top: 277px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #fff;
+    font-family: "Droid Serif";
+    font-weight: 400;
+    font-style: italic;
+  }
+  .meet {
+    top: 361px;
+    font-size: 75px;
+    letter-spacing: -3px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .btn {
+    display: block;
+    position: absolute;
+    top: 474px;
+    border-radius: 3px;
+    background-color: $color-gold;
+    width: 240px;
+    height: 65px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    padding: 23px 0;
+    text-decoration: none;
+  }
+  .wisdom {
+    display: block;
+    position: absolute;
+    margin: 40px 40px 10px 100px;
+    left: 30px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 41px;
+    color: #fed136;
+    font-family: Wisdom;
+  }
 }
-
-.container .text {
-  width: 100%;
-  text-align: center;
-  display: inline;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
-}
-
-.container .welcome {
-  top: 277px;
-  font-size: 40px;
-  letter-spacing: -1px;
-  color: #fff;
-  font-family: "Droid Serif";
-  font-weight: 400;
-  font-style: italic;
-}
-
-.container .meet {
-  top: 361px;
-  font-size: 75px;
-  letter-spacing: -3px;
-  color: #fff;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.container .btn {
-  display: block;
-  position: absolute;
-  top: 474px;
-  border-radius: 3px;
-  background-color: #fed136;
-  width: 240px;
-  height: 65px;
-  font-size: 18px;
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-align: center;
-  padding: 23px 0;
-  text-decoration: none;
-}
-
-.container .wisdom {
-  display: block;
-  position: absolute;
-  margin: 40px 40px 10px 100px;
-  left: 30px;
-  font-size: 26px;
-  letter-spacing: 1px;
-  line-height: 41px;
-  color: #fed136;
-  font-family: Wisdom;
-  border: 1px solid green;
-}
-
+*/
 /*
-
-
-
   .montserrat {
     font-size: 14px;
     line-height: 41px;
@@ -119,4 +159,91 @@ body {
     text-align: left; //center;
   }
 */
+/*Media Querries*/
+@media screen and (max-width: 768px) {
+  nav .container h1 {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50px);
+  }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  nav li {
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  /*
+  footer .copyright{
+      position: relative;
+      margin: 0 auto;
+  }
+    .copyright p {
+      text-align:center;
+      display:block;
+      padding-top: 80px;
+  }
+  .splash-inner h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+  .splash h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .splash .btn {
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+  }
+  .section-title h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  nav .container h1 {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50px);
+  }
+  nav ul {
+  list-style-type: none;
+  text-align: center;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  nav li {
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+  .section-title{
+    margin-bottom: 30px;
+  }
+  .portfolio,
+  .services {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+  }
+*/
+}
 /*# sourceMappingURL=style.css.map */
