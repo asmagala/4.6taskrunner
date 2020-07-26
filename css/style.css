@@ -10,16 +10,56 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 body {
+  text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+.col-4 {
+  padding: 0;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title h3,
+.card-text h5 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+
+.section-title h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+h5 {
+  font-size: 19px;
+}
+
+.section-title h4 {
+  font-family: "Wisdom";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Header*/
 .header {
   background-image: url("../images/Background_Image.jpg");
   height: 100vh;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -61,69 +101,75 @@ nav ul li a {
   text-align: left;
 }
 
-/*
-.container {
-  display: block;
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  .text {
-    width:100%;
-    text-align: center;
-    display: inline;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0;
-  }
-  .welcome {
-    top: 277px;
-    font-size: 40px;
-    letter-spacing: -1px;
-    color: #fff;
-    font-family: "Droid Serif";
-    font-weight: 400;
-    font-style: italic;
-  }
-  .meet {
-    top: 361px;
-    font-size: 75px;
-    letter-spacing: -3px;
-    color: #fff;
-    font-family: "Montserrat";
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .btn {
-    display: block;
-    position: absolute;
-    top: 474px;
-    border-radius: 3px;
-    background-color: $color-gold;
-    width: 240px;
-    height: 65px;
-    font-size: 18px;
-    color: #ffffff;
-    font-family: "Montserrat";
-    font-weight: 700;
-    text-align: center;
-    padding: 23px 0;
-    text-decoration: none;
-  }
-  .wisdom {
-    display: block;
-    position: absolute;
-    margin: 40px 40px 10px 100px;
-    left: 30px;
-    font-size: 26px;
-    letter-spacing: 1px;
-    line-height: 41px;
-    color: #fed136;
-    font-family: Wisdom;
-  }
+.header-text {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  margin: 0;
 }
-*/
+
+.header-text h3 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  width: 400px;
+  top: 10px;
+}
+
+.header-text h2 {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  top: 55px;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: #fed136;
+  width: 240px;
+  height: 65px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  padding: 23px 0;
+  text-decoration: none;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  display: block;
+  font-size: 28px;
+  letter-spacing: -1px;
+  color: #fff;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.meet {
+  display: block;
+  font-size: 48px;
+  letter-spacing: -3px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /*
   .montserrat {
     font-size: 14px;
@@ -159,6 +205,29 @@ nav ul li a {
     text-align: left; //center;
   }
 */
+.services .card {
+  height: auto;
+}
+
+.services .card-text {
+  padding: 0 30px;
+}
+
+.card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 55%;
+  display: inline-block;
+  background: white;
+  border: 5px solid #fed136;
+}
+
+.card-icon i {
+  font-size: 36px;
+  line-height: 55px;
+  color: #fed136;
+}
+
 /*Media Querries*/
 @media screen and (max-width: 768px) {
   nav .container h1 {
