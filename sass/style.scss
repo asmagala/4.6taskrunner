@@ -197,3 +197,45 @@ h5 { margin: 0.9em 0; }
     }
   }
 }
+
+/* Portfolio */
+
+.portfolio {
+  background: $color-five;
+
+  .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .portfolio-item {
+      flex: 0 0 33.33333%;
+      padding: 30px;
+      .photo {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block; 
+        }
+      }
+      .badge {
+        background-color: $color-two;
+        margin-top: 0px;
+        text-align: center;
+        padding: 5px;
+        &-title {
+          font-size: 1.4em;
+          margin-bottom: 0;
+        }
+        &-descritpion {
+          font-size: 1.1em;
+          font-family: $font-subtitle;
+          font-weight: $font-regular;
+          color: $color-four;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+

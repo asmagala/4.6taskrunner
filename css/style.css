@@ -222,4 +222,52 @@ h5 {
 .services-wrapper .services-item .description {
   font-size: 1.1em;
 }
+
+/* Portfolio */
+.portfolio {
+  background: #f3f3f3;
+}
+
+.portfolio .portfolio-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item {
+  -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+  padding: 30px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .badge {
+  background-color: #fff;
+  margin-top: 0px;
+  text-align: center;
+  padding: 5px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .badge-title {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .badge-descritpion {
+  font-size: 1.1em;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #b5b5b5;
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
